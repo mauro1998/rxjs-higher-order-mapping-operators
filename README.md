@@ -1,4 +1,4 @@
-# Rxjs - Higher-Order Mapping Operators
+# Understanding Higher-Order Mapping Operators in Rxjs
 
 Practical exercises and useful resources to learn about higher-order Rxjs mapping operators, some of the most commonly used Rxjs operators that we find in a daily basis: **switchMap, mergeMap, exhaustMap** and **concatMap**.
 
