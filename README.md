@@ -6,9 +6,7 @@ Practical exercises and useful resources to learn about higher-order Rxjs mappin
 
 **Objective:**
 Take the user input and transform the given text by replacing any 'R/r' characters by 'W/w'.  
-Output the final result. 
-
-i.e:
+Output the final result. i.e:
 
 ```
  * -- INPUT --
