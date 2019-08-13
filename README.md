@@ -16,6 +16,7 @@ Take the user input and transform the given text by replacing any 'R/r' characte
 Output the final result. i.e:
 
 ```
+ /**
  * -- INPUT --
  * El burrito barrigón ayer se dio un resbalón
  * 
