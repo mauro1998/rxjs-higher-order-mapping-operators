@@ -26,7 +26,7 @@ const text$ = fromEvent(input, 'keydown').pipe(
 );
 
 const output$ = text$.pipe(
-  // Your code here! :)
+  // Your code goes here!
 );
 
 // Some utilities to log the output, ignore...

@@ -1,0 +1,47 @@
+<style>
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	.container {
+		background: black;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		font-size: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    color: #FFF;
+	}
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  button {
+    width: 3em;
+    height: 3em;
+    border-radius: 5px;
+    border: 0 none;
+    font-size: 32px;
+    outline: 0;
+    cursor: pointer;
+    margin-right: .5em;
+  }
+
+  button:active {
+    box-shadow: inset 1px 1px 20px #000;
+    transition: .1s all ease;
+  }
+</style>
+<div class="container">
+	<div class="buttons">
+    <p>Each button below makes a request. <br>The number determines the time in seconds each request takes to complete.</p>
+		<button data-value="1">1s</button>
+    <button data-value="2">2s</button>
+    <button data-value="3">3s</button>
+  </div>
+</div>
