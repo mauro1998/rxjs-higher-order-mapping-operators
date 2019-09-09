@@ -86,9 +86,9 @@ There are 3 message generators that post random messages on screen. A 4th source
 **Objective:**
 There are 3 source observables emitting at a random pace. When any of the sources emits, request a random number. Anytime a new number is generated, collect and sort all the numbers emitted at the time and log the collection of sorted items on screen. i.e:
 
-````
+```
 /**
-* -- INPUT --
+ * -- INPUT --
  * 100
  * 356
  * 86
