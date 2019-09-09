@@ -7,6 +7,7 @@ import { concatMap, delay, take } from 'rxjs/operators';
  * When any of the sources emits, request a random number.
  * Anytime a new number is generated, collect and sort all the numbers
  * emitted at the time and log the collection of sorted items on screen.
+ * i.e:
  *
  * -- INPUT --
  * 100
