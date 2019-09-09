@@ -1,5 +1,5 @@
 import { empty, fromEvent } from 'rxjs';
-import { startWith, delay, map, pluck } from 'rxjs/operators';
+import { delay, map, pluck, startWith } from 'rxjs/operators';
 
 /**
  * Objective:
@@ -36,11 +36,11 @@ const input$ = fromEvent(buttons, 'click').pipe(
   map((target: HTMLElement) => {
     const val = target.getAttribute('data-value');
     return Number(val);
-  }),
+  })
 );
 
 // Your code goes here:
-const output$ = input$.pipe(map((x) => makeRequest(x)));
+const output$ = input$.pipe(map(x => makeRequest(x)));
 
 // log utilities, ignore...
 output$.subscribe(x => console.log(x));

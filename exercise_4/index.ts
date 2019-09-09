@@ -1,5 +1,12 @@
-import { fromEvent, empty, interval, Observable } from 'rxjs';
-import { filter, tap, startWith, delay, concatMap, pluck } from 'rxjs/operators';
+import { empty, fromEvent, interval, Observable } from 'rxjs';
+import {
+  concatMap,
+  delay,
+  filter,
+  pluck,
+  startWith,
+  tap,
+} from 'rxjs/operators';
 
 /**
  * Objective:
@@ -26,16 +33,18 @@ const api1 = 'https://api.kanye.rest';
 const api2 = 'https://geek-jokes.sameerkumar.website/api';
 const api3 = 'https://api.chucknorris.io/jokes/random?category=explicit';
 
-const makeGetRequest = (url) => {
-  return Observable.create((observer) => {
-    const request = fetch(url).then((res) => res.json());
-    request.then((res) => {
-      observer.next({ response: res });
-      observer.complete();
-    }).catch((err) => {
-      observer.error(err);
-      observer.complete();
-    });
+const makeGetRequest = url => {
+  return Observable.create(observer => {
+    const request = fetch(url).then(res => res.json());
+    request
+      .then(res => {
+        observer.next({ response: res });
+        observer.complete();
+      })
+      .catch(err => {
+        observer.error(err);
+        observer.complete();
+      });
   });
 };
 
@@ -46,7 +55,7 @@ const getDelayedInterval = () => {
       return empty().pipe(
         startWith(delayedTime),
         delay(delayedTime)
-      )
+      );
     })
   );
 };
@@ -69,7 +78,7 @@ const text$ = fromEvent(input, 'keydown').pipe(
   tap(e => e.preventDefault()),
   pluck('target', 'textContent'),
   filter((text: string) => !!text.trim()),
-  tap(() => input.textContent = ''),
+  tap(() => (input.textContent = ''))
 );
 
 // Some utilities to log the output, ignore...

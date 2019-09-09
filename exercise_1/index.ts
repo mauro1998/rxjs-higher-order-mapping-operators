@@ -1,5 +1,5 @@
 import { fromEvent } from 'rxjs';
-import { tap, filter, map, pluck } from 'rxjs/operators';
+import { filter, pluck, tap } from 'rxjs/operators';
 
 /**
  * Objective:

@@ -1,4 +1,4 @@
-import { merge, empty } from 'rxjs';
+import { empty, merge } from 'rxjs';
 import { delay, startWith } from 'rxjs/operators';
 
 /**
