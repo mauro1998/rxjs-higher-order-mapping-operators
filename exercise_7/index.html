@@ -1,0 +1,109 @@
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		background: #000;
+		height: 100%;
+		font-family: monospace;
+	}
+
+	.container {
+		color: #FFF;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+    text-align: center;
+	}
+
+	button {
+		padding: .5em 2em;
+		border: 1px solid #800080;
+		outline: none;
+		background: #800080;
+		color: #FFF;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+		font-size: .7em;
+		border-radius: 3px;
+		cursor: pointer;
+		transition: .1s all ease;
+	}
+
+	button:hover {
+		background: #a71ca7;
+	}
+
+	button:active {
+		background: #610561;
+	}
+
+	.form-control {
+		margin: 1em 0;
+	}
+
+	input[type=text], input[type=password] {
+		padding: .5em .8em;
+		font-size: .8em;
+		border-radius: 3px;
+		background: #800080;
+		border: 2px solid #610561;
+		outline: none;
+		color: #FFF;
+	}
+
+  input:focus {
+    border: 2px solid #DDD;
+  }
+
+	::-webkit-input-placeholder {
+		color: #ccc;
+	}
+
+	:-ms-input-placeholder {
+		color: #ccc;
+	}
+
+	::placeholder {
+		color: #ccc;
+	}
+
+  .msg, label {
+    margin: 1em 0;
+    font-size: 1.2em;
+  }
+
+  span.msg {
+    font-size: 1em;
+  }
+
+  .dashboard {
+    display: none;
+  }
+</style>
+
+<div class="container">
+	<label>Sign in</label>
+	<form class="form">
+    <div class="form-control">
+      <input name="username" type="text" placeholder="Username">
+    </div>
+    <div class="form-control">
+      <input name="password" type="password" placeholder="Password">
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  <span class="msg"></span>
+
+  <div class="dashboard">
+    <div class="msg">Welcome Admin!</div>
+    <button class="logout" type="button">Logout</button>
+  </div>
+</div>

@@ -123,3 +123,16 @@ Every second a counter emits a value incremented by 1. The updated value is disp
  * ...
  */
 ```
+
+## Exercise #7
+
+**Objective:**
+Complete the implementation of the login screen. Take into account that performing many requests at the same time can knock down the server a few seconds. Write a solution that prevents this behavior.
+
+```
+/**
+ * Valid credentials:
+ * username: admin
+ * password: 1234
+ */
+```
